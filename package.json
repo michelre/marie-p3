@@ -1,0 +1,20 @@
+{
+  "name": "marieazemar_3_10022022",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:.style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mar-Aze/MarieAzemar_3_10022022.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist":"last 4 versions"
+  "bugs": {
+    "url": "https://github.com/Mar-Aze/MarieAzemar_3_10022022/issues"
+  },
+  "homepage": "https://github.com/Mar-Aze/MarieAzemar_3_10022022#readme"
+}
