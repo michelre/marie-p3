@@ -1,0 +1,36 @@
+.location {
+    display:flex;
+    justify-content: center;
+    background-color: $main-darkerbgcolor;
+    padding: 20px 0;
+    box-shadow: 0px 2px 2px 1px inset #cfcfcf;
+    & input {
+        border: none;
+        background-color: transparent;
+        padding: 0 0 0 10px;
+        color: $footer-bgcolor;
+    }
+        & ::placeholder {
+            color: $footer-bgcolor;
+        }
+    & i {
+        padding: 0 0 0 60px;
+    }    
+}
+.presentation {
+    background-color: $main-bgcolor;
+    & p {
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+        color: $footer-bgcolor;
+        }
+    & .h1__homepage {
+            font-family: $primary-font;
+            text-align: center;
+            margin: 0;
+            padding-top: 40px;
+            font-size:$hometitle-size;
+    
+    }
+}
