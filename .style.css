@@ -42,12 +42,13 @@ h1 {
 }
 
 .button {
-  background-color: #9356DC;
   font-family: "Roboto", verdana, sans-serif;
   color: white;
   padding: 16px;
-  border: solid 2px #9356DC;
+  border: 1px;
+  border-color: #FF79DA #9356DC #9356DC #FF79DA;
   border-radius: 50px;
+  background: linear-gradient(to left top, #9356DC, #FF79DA);
 }
 
 .header a {

@@ -1,9 +1,10 @@
 .button {
-    background-color: $primary-color;
     font-family: $primary-font;
     color: $footer-txtcolor;
     padding: 16px;
-    border: solid 2px $primary-color;
+    border: 1px;
+    border-color: $secondary-color $primary-color $primary-color $secondary-color;
     border-radius: 50px;
+    background: linear-gradient(to left top, $primary-color, $secondary-color);
     
 }
