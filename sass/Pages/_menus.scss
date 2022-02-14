@@ -1,17 +1,23 @@
 .header__menu {
     display:flex;
     align-items:center;
-}
-.header__menu img {
-    margin:auto;
-    padding: 14px;
-}
-.header__menu i {
-    margin:auto;
-    padding: 20px 40px;
-    height: 20px;
+        & img {
+            margin:auto;
+            padding: 14px;
+        }
+        & i {
+            margin:auto;
+            padding: 20px 40px;
+            height: 20px;
+        }
 }
 
-.menu__img {
+.img__menu {
     width: 100%;
+}
+
+.form__menu {
+    & .button {
+        width: 180px;
+    }
 }
