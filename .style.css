@@ -28,6 +28,9 @@ a:active {
 
 ul {
   list-style-type: none;
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 body {
@@ -45,10 +48,16 @@ h1 {
 
 .footer img {
   color: white;
+  padding: 30px 0 0 30px;
 }
 
 .footer a {
   color: white;
+}
+
+.footer ul {
+  line-height: 30px;
+  padding: 30px;
 }
 
 /*# sourceMappingURL=.style.css.map */
