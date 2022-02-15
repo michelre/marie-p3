@@ -62,6 +62,7 @@ h1 {
   border-radius: 16px;
   border: 1px solid #F6F6F6;
   width: 300px;
+  height: 60px;
   cursor: pointer;
   box-shadow: 1px 3px 2px 1px #e6e4e4;
 }
@@ -85,7 +86,7 @@ h1 {
 
 .footer img {
   padding: 30px 0 0 30px;
-  height: 20px;
+  width: 40%;
 }
 
 .footer a {
@@ -145,16 +146,13 @@ h1 {
   flex-direction: column;
   padding: 20px;
 }
-.operation .operation__list {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.operation li {
+  width: 300px;
 }
 .operation .operation__form {
   display: flex;
   align-items: baseline;
   margin: 20px 0;
-  width: auto;
   position: relative;
 }
 .operation p {
@@ -170,12 +168,40 @@ h1 {
   padding: 5px;
   font-size: smaller;
   position: relative;
-  left: 20px;
+  left: 26px;
 }
 .operation i {
   color: #7E7E7E;
+  width: 20px;
+  height: 16px;
   position: relative;
   left: 40px;
+}
+.operation i:hover {
+  color: #9356DC;
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #F6F6F6;
+}
+.restaurants article {
+  background-color: white;
+  border-radius: 14px;
+  box-shadow: 1px 3px 2px 1px #e6e4e4;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.restaurants article:hover {
+  background-color: #F5EDFF;
+}
+.restaurants article img {
+  width: 100%;
+  border-radius: 14px 14px 0 0;
+  height: 160px;
 }
 
 .header__menu {

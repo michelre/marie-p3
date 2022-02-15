@@ -44,16 +44,13 @@
     display: flex;
     flex-direction: column;
     padding: 20px;
-    & .operation__list {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+    & li {
+        width: 300px;
     }
     & .operation__form {
         display:flex;
         align-items: baseline;
         margin: 20px 0;
-        width: auto;
         position:relative;
     }
         & p {
@@ -69,11 +66,39 @@
             padding: 5px;
             font-size: smaller;
             position: relative;
-            left: 20px;
+            left: 26px;
         }
         & i {
             color: $icone-color;
+            width: 20px;
+            height: 16px;
             position: relative;
             left: 40px;
+            &:hover {
+                color: $primary-color;
+            }
+        }    
+}
+.restaurants {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: $main-bgcolor;
+    & article {
+        background-color: $footer-txtcolor;
+        border-radius: 14px;
+        @include box-shadow;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        &:hover {
+            background-color: $lightprimary-color;
         }
+    & img {
+        width: 100%;
+        border-radius: 14px 14px 0 0;
+        height: 160px;
+    }
+    }
+
 }
