@@ -26,6 +26,7 @@
         margin: 0;
         padding: 20px;
         color: $footer-bgcolor;
+        font-weight:300;
         }
     & .h1__homepage {
             font-family: $primary-font;
@@ -37,4 +38,32 @@
     & .pinkbutton {
         margin: 10px 70px 60px 70px;
     }
+}
+
+.operation {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    & .operation__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    & .operation__form {
+        display:flex;
+        align-items: baseline;
+    }
+        & p {
+            background-color: $primary-color;
+            color: $footer-txtcolor;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20px;
+            height: 20px;
+            border-radius: 50px;
+            border: solid $primary-color 5px;
+            padding: 5px;
+            font-size: smaller;
+        }
 }

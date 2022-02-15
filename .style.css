@@ -3,8 +3,11 @@
 /*Colors*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-body {
+* {
   box-sizing: border-box;
+}
+
+body {
   margin: 0;
 }
 
@@ -16,12 +19,10 @@ a:link {
   text-decoration: none;
   color: black;
 }
-
 a:visited {
   text-decoration: none;
   color: black;
 }
-
 a:active {
   text-decoration: none;
 }
@@ -49,7 +50,23 @@ h1 {
   border-color: #FF79DA #9356DC #9356DC #FF79DA;
   border-radius: 50px;
   background: linear-gradient(to left top, #9356DC, #FF79DA);
+  cursor: pointer;
   box-shadow: 1px 3px 2px 1px #e6e4e4;
+}
+
+.greybutton {
+  font-family: "Roboto", verdana, sans-serif;
+  font-weight: bold;
+  background-color: #F6F6F6;
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid #F6F6F6;
+  width: 100%;
+  cursor: pointer;
+  box-shadow: 1px 3px 2px 1px #e6e4e4;
+}
+.greybutton:hover {
+  background-color: #F5EDFF;
 }
 
 .header a {
@@ -110,6 +127,7 @@ h1 {
   margin: 0;
   padding: 20px;
   color: #353535;
+  font-weight: 300;
 }
 .presentation .h1__homepage {
   font-family: "Roboto", verdana, sans-serif;
@@ -120,6 +138,34 @@ h1 {
 }
 .presentation .pinkbutton {
   margin: 10px 70px 60px 70px;
+}
+
+.operation {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.operation .operation__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.operation .operation__form {
+  display: flex;
+  align-items: baseline;
+}
+.operation p {
+  background-color: #9356DC;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  border: solid #9356DC 5px;
+  padding: 5px;
+  font-size: smaller;
 }
 
 .header__menu {
