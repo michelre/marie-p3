@@ -19,6 +19,8 @@
 }
 .presentation {
     background-color: $main-bgcolor;
+    display: flex;
+    flex-direction:column;
     & p {
         text-align: center;
         margin: 0;
@@ -31,6 +33,8 @@
             margin: 0;
             padding-top: 40px;
             font-size:$hometitle-size;
-    
+    }
+    & .button {
+        margin: 10px 70px 60px 70px;
     }
 }
