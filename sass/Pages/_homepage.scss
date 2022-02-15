@@ -12,6 +12,7 @@
     }
         & ::placeholder {
             color: $footer-bgcolor;
+            font-weight: bold;
         }
     & i {
         padding: 0 0 0 60px;
@@ -84,6 +85,11 @@
     flex-direction: column;
     padding: 20px;
     background-color: $main-bgcolor;
+    & .restaurants__flex {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
     & article {
         background-color: $footer-txtcolor;
         border-radius: 14px;
@@ -115,5 +121,19 @@
             right: 16px;   
         }
     }
-    
+    & .restaurants__texte {
+        position:relative;
+        padding: 16px;
+        & h3 {
+            margin:0;
+        }
+        & p {
+            margin:0;
+        }
+        & i {
+            position: absolute;
+            top: 25px;
+            right: 24px;
+        }
+    }
 }

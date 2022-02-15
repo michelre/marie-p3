@@ -8,7 +8,8 @@
 }
 
 body {
-  margin: 0;
+  margin: auto;
+  max-width: 1920px;
 }
 
 img {
@@ -36,6 +37,7 @@ ul {
 
 body {
   font-family: "Roboto", verdana, sans-serif;
+  word-spacing: -1px;
 }
 
 h1 {
@@ -113,6 +115,7 @@ h1 {
 }
 .location ::placeholder {
   color: #353535;
+  font-weight: bold;
 }
 .location i {
   padding: 0 0 0 60px;
@@ -187,6 +190,11 @@ h1 {
   padding: 20px;
   background-color: #F6F6F6;
 }
+.restaurants .restaurants__flex {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 .restaurants article {
   background-color: white;
   border-radius: 14px;
@@ -215,6 +223,21 @@ h1 {
   text-align: center;
   top: 1px;
   right: 16px;
+}
+.restaurants .restaurants__texte {
+  position: relative;
+  padding: 16px;
+}
+.restaurants .restaurants__texte h3 {
+  margin: 0;
+}
+.restaurants .restaurants__texte p {
+  margin: 0;
+}
+.restaurants .restaurants__texte i {
+  position: absolute;
+  top: 25px;
+  right: 24px;
 }
 
 .header__menu {
