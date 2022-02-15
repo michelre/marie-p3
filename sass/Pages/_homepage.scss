@@ -52,6 +52,9 @@
     & .operation__form {
         display:flex;
         align-items: baseline;
+        margin: 20px 0;
+        width: auto;
+        position:relative;
     }
         & p {
             background-color: $primary-color;
@@ -65,5 +68,12 @@
             border: solid $primary-color 5px;
             padding: 5px;
             font-size: smaller;
+            position: relative;
+            left: 20px;
+        }
+        & i {
+            color: $icone-color;
+            position: relative;
+            left: 40px;
         }
 }

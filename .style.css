@@ -61,7 +61,7 @@ h1 {
   padding: 16px;
   border-radius: 16px;
   border: 1px solid #F6F6F6;
-  width: 100%;
+  width: 300px;
   cursor: pointer;
   box-shadow: 1px 3px 2px 1px #e6e4e4;
 }
@@ -153,6 +153,9 @@ h1 {
 .operation .operation__form {
   display: flex;
   align-items: baseline;
+  margin: 20px 0;
+  width: auto;
+  position: relative;
 }
 .operation p {
   background-color: #9356DC;
@@ -166,6 +169,13 @@ h1 {
   border: solid #9356DC 5px;
   padding: 5px;
   font-size: smaller;
+  position: relative;
+  left: 20px;
+}
+.operation i {
+  color: #7E7E7E;
+  position: relative;
+  left: 40px;
 }
 
 .header__menu {
