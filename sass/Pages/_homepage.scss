@@ -91,14 +91,29 @@
         width: 100%;
         margin: 0;
         padding: 0;
+        position: relative;
         &:hover {
             background-color: $lightprimary-color;
         }
-    & img {
-        width: 100%;
-        border-radius: 14px 14px 0 0;
-        height: 160px;
+    } 
+    & .restaurants__img {    
+        & img {
+            width: 100%;
+            border-radius: 14px 14px 0 0;
+            height: 200px;
+        }
+        & p {
+            background-color: $tertiary-color;
+            color: $darktertiary-color;
+            font-weight: bold;
+            padding: 12px;
+            width: 120px;
+            position: absolute;
+            border-radius: 8px;
+            text-align: center;
+            top: 1px;
+            right: 16px;   
+        }
     }
-    }
-
+    
 }

@@ -194,14 +194,27 @@ h1 {
   width: 100%;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 .restaurants article:hover {
   background-color: #F5EDFF;
 }
-.restaurants article img {
+.restaurants .restaurants__img img {
   width: 100%;
   border-radius: 14px 14px 0 0;
-  height: 160px;
+  height: 200px;
+}
+.restaurants .restaurants__img p {
+  background-color: #99E2D0;
+  color: #269E80;
+  font-weight: bold;
+  padding: 12px;
+  width: 120px;
+  position: absolute;
+  border-radius: 8px;
+  text-align: center;
+  top: 1px;
+  right: 16px;
 }
 
 .header__menu {
