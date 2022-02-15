@@ -41,7 +41,7 @@ h1 {
   font-family: "Shrikhand", "roboto", sans-serif;
 }
 
-.button {
+.pinkbutton {
   font-family: "Roboto", verdana, sans-serif;
   color: white;
   padding: 16px;
@@ -118,7 +118,7 @@ h1 {
   padding-top: 40px;
   font-size: 1.5em;
 }
-.presentation .button {
+.presentation .pinkbutton {
   margin: 10px 70px 60px 70px;
 }
 
@@ -140,7 +140,7 @@ h1 {
   width: 100%;
 }
 
-.form__menu .button {
+.form__menu .pinkbutton {
   width: 180px;
 }
 
