@@ -20,15 +20,39 @@
                 border: solid 3px transparent;
                 font-size: 1em;
                 font-weight: 400;
+                margin: 30px 0 20px 0;
             }
-            & span {
+            & .h2__decoration {
                 border-bottom: solid 4px $tertiary-color;
                 padding-bottom: 6px;
             }
+            & li {
+                background-color: $footer-txtcolor;
+                border-radius: 20px;
+                @include box-shadow;
+                padding: 12px;
+                margin: 12px 0;
+                    & h3 {
+                        margin:0 0 2px 0;
+                    }
+                & .menu__li {
+                    display: flex;
+                    & p {
+                        margin:0;
+                        width: 90%;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+                    & .price {
+                        font-weight: bold;
+                    }
+                }      
+            }
             & .pinkbutton {
                 width: 180px;
+                margin: 46px 76px 36px 76px;
                 display: flex;
-                margin: auto;
                 justify-content: center;
             }
         }
