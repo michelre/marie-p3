@@ -9,6 +9,8 @@
         background-color: transparent;
         padding: 0 0 0 10px;
         color: $footer-bgcolor;
+        font-size: 1.05em;
+        font-family: $primary-font;
     }
         & ::placeholder {
             color: $footer-bgcolor;
