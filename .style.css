@@ -42,6 +42,7 @@ body {
 
 h1 {
   font-family: "Shrikhand", "roboto", sans-serif;
+  font-size: 1.6em;
 }
 
 .pinkbutton {
@@ -246,23 +247,9 @@ h1 {
 }
 .restaurants .restaurants__texte i {
   position: absolute;
+  font-size: 25px;
   top: 25px;
   right: 24px;
-  font-size: 25px;
-}
-
-.header__menu {
-  display: inline-flex;
-  align-items: center;
-}
-.header__menu img {
-  margin: auto;
-  padding: 14px;
-}
-.header__menu i {
-  margin: auto;
-  padding: 20px 40px;
-  font-size: 20px;
 }
 
 .img__menu {
@@ -277,8 +264,21 @@ h1 {
   position: relative;
   top: 200px;
 }
-
-.form__menu .pinkbutton {
+.menu .menu__h1 {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.menu .menu__h1 i {
+  font-size: 25px;
+}
+.menu .menu__form h2 {
+  border: solid 3px transparent;
+}
+.menu .menu__form span {
+  border-bottom: solid 3px #99E2D0;
+}
+.menu .menu__form .pinkbutton {
   width: 180px;
 }
 
