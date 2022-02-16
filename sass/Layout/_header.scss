@@ -1,7 +1,23 @@
-.header a {
-    display:flex;
+.header {
+    & a {
+        display:flex;
+    }
+    & img {
+        margin:auto;
+        padding: 20px;
+    }
 }
-.header img {
-    margin:auto;
-    padding: 20px;
+
+.header__menu {
+    display: inline-flex;
+    align-items:center;
+        & img {
+            margin:auto;
+            padding: 14px;
+        }
+        & i {
+            margin:auto;
+            padding: 20px 40px;
+            font-size: 20px;
+        }
 }
