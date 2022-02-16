@@ -242,7 +242,7 @@ h1 {
 }
 
 .header__menu {
-  display: flex;
+  display: inline-flex;
   align-items: center;
 }
 .header__menu img {
@@ -252,11 +252,20 @@ h1 {
 .header__menu i {
   margin: auto;
   padding: 20px 40px;
-  height: 20px;
+  font-size: 20px;
 }
 
 .img__menu {
   width: 100%;
+  position: absolute;
+}
+
+.menu {
+  background-color: #F6F6F6;
+  border-radius: 15px 15px 0 0;
+  padding: 20px;
+  position: relative;
+  top: 200px;
 }
 
 .form__menu .pinkbutton {
