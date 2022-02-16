@@ -259,7 +259,7 @@ h1 {
 
 .menu {
   background-color: #F6F6F6;
-  border-radius: 15px 15px 0 0;
+  border-radius: 50px 50px 0 0;
   padding: 20px;
   position: relative;
   top: 200px;
@@ -274,12 +274,18 @@ h1 {
 }
 .menu .menu__form h2 {
   border: solid 3px transparent;
+  font-size: 1em;
+  font-weight: 400;
 }
 .menu .menu__form span {
-  border-bottom: solid 3px #99E2D0;
+  border-bottom: solid 4px #99E2D0;
+  padding-bottom: 6px;
 }
 .menu .menu__form .pinkbutton {
   width: 180px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=.style.css.map */
