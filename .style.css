@@ -254,15 +254,12 @@ h1 {
 
 .img__menu {
   width: 100%;
-  position: absolute;
 }
 
 .menu {
   background-color: #F6F6F6;
   border-radius: 50px 50px 0 0;
   padding: 20px;
-  position: relative;
-  top: 200px;
 }
 .menu .menu__h1 {
   display: flex;
