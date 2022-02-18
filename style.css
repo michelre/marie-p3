@@ -135,9 +135,9 @@ h1 {
 .location {
   display: flex;
   justify-content: center;
-  background-color: #EAEAEA;
+  background: linear-gradient(#cfcfcf 5%, 10%, #EAEAEA);
   padding: 20px 0;
-  box-shadow: 0px 2px 2px 1px inset #cfcfcf;
+  /*box-shadow: 0px 2px 2px 1px inset #cfcfcf;*/
 }
 .location input {
   border: none;
