@@ -1,7 +1,6 @@
 .pinkbutton {
     font-family: $primary-font;
     color: $footer-txtcolor;
-    font-size: 1.1em;
     padding: 16px;
     border: 1px;
     border-color: $secondary-color $primary-color $primary-color $secondary-color;
@@ -16,14 +15,21 @@
     font-weight: bold;
     font-size: 0.9em;
     background-color: $main-bgcolor;
-    padding: 16px;
+    padding: 16px 16px 16px 32px;
     border-radius: 16px;
     border: 1px solid $main-bgcolor;
-    width: 300px;
+    width: 100%;
     height: 60px;
     cursor: pointer;
     @include box-shadow;
+    display: flex;
+    position: relative;
+    align-items: center;
+    transition: background-color .250s linear;
     &:hover {
         background-color: $lightprimary-color;
+        .operation__form__icon {
+            color: $primary-color;
         }
+    }    
 }

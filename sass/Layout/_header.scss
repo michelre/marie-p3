@@ -9,15 +9,18 @@
 }
 
 .header__menu {
-    display: inline-flex;
-    align-items:center;
+    width: 100%;
+        & a {
+            display: flex;
+            align-items: center;
+        }
         & img {
             margin:auto;
-            padding: 14px;
+            padding: 16px 0;
+            display: block;
         }
         & i {
-            margin:auto;
-            padding: 20px 40px;
+            padding: 16px;
             font-size: 20px;
         }
 }

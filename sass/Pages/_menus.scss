@@ -9,7 +9,7 @@
     border-radius: 50px 50px 0 0;
     padding: 20px;
     position:relative;
-    top: 200px;
+    top: 160px;
         & .menu__h1 {
             display: flex;
             align-items: baseline;
@@ -53,8 +53,8 @@
                 }      
             }
             & .pinkbutton {
-                width: 180px;
-                margin: 46px 76px 36px 76px;
+                padding: 16px 32px;
+                margin: 32px auto;
                 display: flex;
                 justify-content: center;
             }

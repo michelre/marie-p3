@@ -11,6 +11,7 @@
         color: $footer-bgcolor;
         font-size: 1.05em;
         font-family: $primary-font;
+        font-weight: bold;
     }
         & ::placeholder {
             color: $footer-bgcolor;
@@ -47,15 +48,18 @@
     display: flex;
     flex-direction: column;
     padding: 20px;
-    & li {
-        width: 300px;
-    }
+    margin-bottom: 32px;
     & .operation__form {
         display:flex;
         align-items: baseline;
         margin: 20px 0;
         position:relative;
     }
+        & ul {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
         & p {
             background-color: $primary-color;
             color: $footer-txtcolor;
@@ -68,15 +72,13 @@
             border: solid $primary-color 5px;
             padding: 5px;
             font-size: smaller;
-            position: relative;
-            left: 26px;
+            position: absolute;
+            left: -10px;
         }
         & i {
             color: $icone-color;
-            width: 20px;
+            width: 40px;
             height: 16px;
-            position: relative;
-            left: 40px;
             &:hover {
                 color: $primary-color;
             }
@@ -85,7 +87,7 @@
 .restaurants {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 20px 20px 56px 20px;
     background-color: $main-bgcolor;
     & .restaurants__flex {
         display: flex;
@@ -100,6 +102,7 @@
         margin: 0;
         padding: 0;
         position: relative;
+        transition: background-color .5s ease;
         &:hover {
             background-color: $lightprimary-color;
         }
@@ -131,6 +134,7 @@
         }
         & p {
             margin:0;
+            font-weight: 300;
         }
         & i {
             position: absolute;
