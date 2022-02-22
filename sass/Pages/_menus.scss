@@ -34,10 +34,10 @@
                 border-radius: 20px;
                 @include box-shadow;
                 padding: 12px;
-                margin: 12px 0;
+                margin: 12px 0;  
                     & h3 {
                         margin:0 0 2px 0;
-                    }
+                    }                    
                 & .menu__li {
                     display: flex;
                     & p {
@@ -50,6 +50,12 @@
                     & .price {
                         font-weight: bold;
                     }
+                    & i {
+                        color: $footer-txtcolor;
+                        margin:auto;
+                        background-color: $tertiary-color;
+                        display: none;
+                    } 
                 }      
             }
             & .pinkbutton {

@@ -3,6 +3,27 @@
 /*Colors*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+    opacity: 0;
+    display: none;
+  }
+}
+@keyframes hide {
+  0% {
+    position: fixed;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    position: initial;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -146,12 +167,36 @@ h1 {
   padding-top: 16px;
 }
 
+.spin {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: #F5EDFF;
+  animation: hide 2s 1.5s linear 1 forwards;
+}
+.spin::before {
+  display: block;
+  content: "";
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: #9356DC solid 10px;
+  border-bottom-color: #FF79DA;
+  border-top-color: #FF79DA;
+  animation: spin 2s linear 1 forwards;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  will-change: transform;
+}
+
 .location {
   display: flex;
   justify-content: center;
   background: linear-gradient(#cfcfcf 5%, 10%, #EAEAEA);
   padding: 20px 0;
-  /*box-shadow: 0px 2px 2px 1px inset #cfcfcf;*/
 }
 .location input {
   border: none;
@@ -345,6 +390,12 @@ h1 {
 }
 .menu .menu__form li .menu__li .price {
   font-weight: bold;
+}
+.menu .menu__form li .menu__li i {
+  color: white;
+  margin: auto;
+  background-color: #99E2D0;
+  display: none;
 }
 .menu .menu__form .pinkbutton {
   padding: 16px 32px;
