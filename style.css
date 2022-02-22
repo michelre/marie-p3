@@ -56,6 +56,11 @@ h1 {
   background: linear-gradient(to left top, #9356DC, #FF79DA);
   cursor: pointer;
   box-shadow: 1px 3px 2px 1px #e6e4e4;
+  transition: all 400ms linear;
+}
+.pinkbutton:hover {
+  background: linear-gradient(to left top, #ae80e5, #fface8);
+  box-shadow: 2px 4px 3px 2px #d6d4d4;
 }
 
 .greybutton {
@@ -73,7 +78,7 @@ h1 {
   display: flex;
   position: relative;
   align-items: center;
-  transition: background-color 0.25s linear;
+  transition: all 0.25s linear;
 }
 .greybutton:hover {
   background-color: #F5EDFF;

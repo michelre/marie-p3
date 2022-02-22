@@ -7,7 +7,13 @@
     border-radius: 50px;
     background: linear-gradient(to left top, $primary-color, $secondary-color);
     cursor: pointer;
-    @include box-shadow;  
+    @include box-shadow; 
+    transition: all 400ms linear;
+    &:hover {
+        background: linear-gradient(to left top, lighten($primary-color, 10), lighten($secondary-color, 10));
+        @include strongerbox-shadow;
+    } 
+   
 }
 
 .greybutton {
@@ -25,7 +31,7 @@
     display: flex;
     position: relative;
     align-items: center;
-    transition: background-color .250s linear;
+    transition: all .250s linear;
     &:hover {
         background-color: $lightprimary-color;
         .operation__form__icon {
