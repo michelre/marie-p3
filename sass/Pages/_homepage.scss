@@ -1,11 +1,10 @@
 .spin {
-    position:absolute;
+    position:fixed;
     width: 100%;
     height: 100%;
     z-index: 1000;
     background-color: $lightprimary-color;
     animation: hide 2s 1.5s linear 1 forwards;
-      
     &::before {
         display: block;
         content: "";
