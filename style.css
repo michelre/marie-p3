@@ -336,6 +336,13 @@ h1 {
   font-size: 25px;
   top: 25px;
   right: 24px;
+  transition: all 0.3s linear 0s;
+  background: linear-gradient(to left top, #9356DC, #FF79DA);
+  width: auto;
+  height: 0;
+}
+.restaurants .restaurants__texte i:hover {
+  height: 35%;
 }
 
 .img__menu {

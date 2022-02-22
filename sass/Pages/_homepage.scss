@@ -166,6 +166,14 @@
             font-size: 25px;
             top: 25px;
             right: 24px;
+            transition: all 0.3s linear 0s;
+            background: linear-gradient(to left top, $primary-color, $secondary-color);
+            width: auto;
+            height: 0;
+            }
+            & i:hover  {
+                height: 35%;
+            }
         }
     }
-}
+
