@@ -163,28 +163,31 @@
             margin:0;
             font-weight: 300;
         }
-        & .heart {
-            font-size: 25px;
-            transition: all 1s linear 0s;
-            & .empty-heart {
-                z-index: 100;
-                position: absolute;
-                top: 25px;
-                right: 24px;
-                background-color: $footer-txtcolor;
+    }  
+}          
+.heart {
+    font-size: 25px;
+        & .empty-heart {
+            z-index: 100;
+            position: absolute;
+            top: 25px;
+            right: 24px;
+            background-color: $footer-txtcolor;
+            transition: animation 3s linear 1s;
                 &:hover {
                     animation: heart 3s cubic-bezier(0.88, -0.03, 1, 0.53) 1 both;
                     background: linear-gradient(to left top, $primary-color, $secondary-color);
                     mix-blend-mode: lighten;
                     color: transparent;
                 }
-            }
-            & .full-heart {
+        }
+        & .full-heart {
                 color:$primary-color;
                 position: absolute;
                 top: 25px;
                 right: 24px;
-            }
+                
         }
-    }
 }
+
+

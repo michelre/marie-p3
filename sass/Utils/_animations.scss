@@ -27,36 +27,32 @@
         z-index: 100;
         opacity: 1;
     }
-    10% {
-        opacity: 0.9;
-    }
-    20% {
-        opacity:0.8;
-    }
-    30% {
-        opacity: 0.7;
-    }
-    40% {
-        opacity: 0.6;
-    }
     50% {
         opacity: 0.5;
         
     }
-    60% {
-        opacity: 0.4;
-    }
-    70% {
-        opacity: 0.3;
-    }
-    80% {
-        opacity: 0.2;
-    }
-    90% {
-        opacity: 0.1;
-    }
     100% {
         z-index: -1000;
-        opacity: 0;        
+        opacity: 0;      
+    }
+}
+
+@keyframes rotate {
+   100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+@keyframes appear {
+    0% {
+        transform: scale(0);
+        width:0%;
+        
+    }
+    100% {
+        transform:scale(1);
+        width: 10%;
+       
     }
 }

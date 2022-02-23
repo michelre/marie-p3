@@ -15,7 +15,7 @@
             align-items: baseline;
             justify-content: space-between;
                 & i {
-                    font-size: 25px;
+                    background-color: $main-bgcolor;
                 }
         }
         & .menu__form {
@@ -33,37 +33,56 @@
                 background-color: $footer-txtcolor;
                 border-radius: 20px;
                 @include box-shadow;
-                padding: 12px;
-                margin: 12px 0;  
+                margin: 12px 0; 
+                display:flex;
+                cursor: pointer;
+                & .menu__content {
+                    width: 90%;
+                    padding: 12px;
+                } 
                     & h3 {
                         margin:0 0 2px 0;
                     }                    
-                & .menu__li {
-                    display: flex;
-                    & p {
-                        margin:0;
-                        width: 90%;
-                        overflow: hidden;
-                        white-space: nowrap;
-                        text-overflow: ellipsis;
-                    }
-                    & .price {
-                        font-weight: bold;
-                    }
-                    & i {
-                        color: $footer-txtcolor;
-                        margin:auto;
+                    & .menu__li {
+                        display: flex;
+                        & p {
+                            margin:0;
+                            width: 90%;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                        }
+                        & .price {
+                            font-weight: bold;
+                        }
+                    }    
+                & .selection__item {
                         background-color: $tertiary-color;
-                        display: none;
-                    } 
-                }      
-            }
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 0 20px 20px 0;
+                        width: 0%;
+                        transform: scale(0);
+                        animation: appear 3s 1 both; 
+                        & i {
+                            color: $footer-txtcolor;
+                            margin:auto;
+                            font-size: 20px; 
+                            animation: rotate 1s 1;  
+                        }                   
+                }
+                   
+            } 
+        }      
+    
             & .pinkbutton {
                 padding: 16px 32px;
                 margin: 32px auto;
                 display: flex;
                 justify-content: center;
             }
-        }
+}            
 
-}
+
+

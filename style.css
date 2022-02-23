@@ -29,36 +29,27 @@
     z-index: 100;
     opacity: 1;
   }
-  10% {
-    opacity: 0.9;
-  }
-  20% {
-    opacity: 0.8;
-  }
-  30% {
-    opacity: 0.7;
-  }
-  40% {
-    opacity: 0.6;
-  }
   50% {
     opacity: 0.5;
-  }
-  60% {
-    opacity: 0.4;
-  }
-  70% {
-    opacity: 0.3;
-  }
-  80% {
-    opacity: 0.2;
-  }
-  90% {
-    opacity: 0.1;
   }
   100% {
     z-index: -1000;
     opacity: 0;
+  }
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes appear {
+  0% {
+    transform: scale(0);
+    width: 0%;
+  }
+  100% {
+    transform: scale(1);
+    width: 10%;
   }
 }
 * {
@@ -368,24 +359,25 @@ h1 {
   margin: 0;
   font-weight: 300;
 }
-.restaurants .restaurants__texte .heart {
+
+.heart {
   font-size: 25px;
-  transition: all 1s linear 0s;
 }
-.restaurants .restaurants__texte .heart .empty-heart {
+.heart .empty-heart {
   z-index: 100;
   position: absolute;
   top: 25px;
   right: 24px;
   background-color: white;
+  transition: animation 3s linear 1s;
 }
-.restaurants .restaurants__texte .heart .empty-heart:hover {
+.heart .empty-heart:hover {
   animation: heart 3s cubic-bezier(0.88, -0.03, 1, 0.53) 1 both;
   background: linear-gradient(to left top, #9356DC, #FF79DA);
   mix-blend-mode: lighten;
   color: transparent;
 }
-.restaurants .restaurants__texte .heart .full-heart {
+.heart .full-heart {
   color: #9356DC;
   position: absolute;
   top: 25px;
@@ -410,7 +402,7 @@ h1 {
   justify-content: space-between;
 }
 .menu .menu__h1 i {
-  font-size: 25px;
+  background-color: #F6F6F6;
 }
 .menu .menu__form h2 {
   border: solid 3px transparent;
@@ -426,8 +418,13 @@ h1 {
   background-color: white;
   border-radius: 20px;
   box-shadow: 1px 3px 2px 1px #e6e4e4;
-  padding: 12px;
   margin: 12px 0;
+  display: flex;
+  cursor: pointer;
+}
+.menu .menu__form li .menu__content {
+  width: 90%;
+  padding: 12px;
 }
 .menu .menu__form li h3 {
   margin: 0 0 2px 0;
@@ -445,13 +442,23 @@ h1 {
 .menu .menu__form li .menu__li .price {
   font-weight: bold;
 }
-.menu .menu__form li .menu__li i {
+.menu .menu__form li .selection__item {
+  background-color: #99E2D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 20px 20px 0;
+  width: 0%;
+  transform: scale(0);
+  animation: appear 3s 1 both;
+}
+.menu .menu__form li .selection__item i {
   color: white;
   margin: auto;
-  background-color: #99E2D0;
-  display: none;
+  font-size: 20px;
+  animation: rotate 1s 1;
 }
-.menu .menu__form .pinkbutton {
+.menu .pinkbutton {
   padding: 16px 32px;
   margin: 32px auto;
   display: flex;
