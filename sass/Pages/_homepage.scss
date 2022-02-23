@@ -46,6 +46,7 @@
         padding: 0 0 0 60px;
     }    
 }
+
 .presentation {
     background-color: $main-bgcolor;
     display: flex;
@@ -106,14 +107,15 @@
             height: 16px;
             &:hover {
                 color: $primary-color;
-            }
-        }    
+        }
+    }    
 }
+
 .restaurants {
     display: flex;
     flex-direction: column;
     padding: 20px 20px 56px 20px;
-    background-color: $main-bgcolor;
+    background-color: $main-bgcolor;    
     & .restaurants__flex {
         display: flex;
         flex-direction: column;
@@ -127,9 +129,9 @@
         margin: 0;
         padding: 0;
         position: relative;
-        transition: background-color .5s ease;
+        transition: all .5s ease;
         &:hover {
-            background-color: $lightprimary-color;
+            @include strongerbox-shadow;
         }
     } 
     & .restaurants__img {    
@@ -161,19 +163,28 @@
             margin:0;
             font-weight: 300;
         }
-        & i {
-            position: absolute;
+        & .heart {
             font-size: 25px;
-            top: 25px;
-            right: 24px;
-            transition: all 0.3s linear 0s;
-            background: linear-gradient(to left top, $primary-color, $secondary-color);
-            width: auto;
-            height: 0;
+            transition: all 1s linear 0s;
+            & .empty-heart {
+                z-index: 100;
+                position: absolute;
+                top: 25px;
+                right: 24px;
+                background-color: $footer-txtcolor;
+                &:hover {
+                    animation: heart 3s cubic-bezier(0.88, -0.03, 1, 0.53) 1 both;
+                    background: linear-gradient(to left top, $primary-color, $secondary-color);
+                    mix-blend-mode: lighten;
+                    color: transparent;
+                }
             }
-            & i:hover  {
-                height: 35%;
+            & .full-heart {
+                color:$primary-color;
+                position: absolute;
+                top: 25px;
+                right: 24px;
             }
         }
     }
-
+}
