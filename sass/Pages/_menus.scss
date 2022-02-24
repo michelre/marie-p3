@@ -29,6 +29,15 @@
                 border-bottom: solid 4px $tertiary-color;
                 padding-bottom: 6px;
             }
+            & .delay__1 {
+                animation: slidein 1s ease 0s 1 normal forwards;              
+            }
+            & .delay__2 {
+                animation: slidein 1s ease 0.2s 1 normal forwards;
+            }
+            & .delay__3 {
+                animation: slidein 1s ease 0.4s 1 normal forwards;
+            }
             & li {
                 background-color: $footer-txtcolor;
                 border-radius: 20px;
