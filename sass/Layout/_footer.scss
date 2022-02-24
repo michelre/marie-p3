@@ -2,6 +2,7 @@
     background-color: $footer-bgcolor;
     color: $footer-txtcolor;
     padding: 24px;
+    position: relative;
     & img {
         width: 120px;
     }
@@ -14,21 +15,5 @@
     }
 }
 
-.footer__menu {
-    background-color: $footer-bgcolor;
-    color: $footer-txtcolor;
-    padding: 24px;
-    position: relative;
-    top: 160px;
-    & img {
-        width: 120px;
-    }
-    & a {
-        color: $footer-txtcolor;
-    }
-    & ul {
-        line-height: 30px;
-        padding-top: 16px;
-    }
-}
+
 

@@ -195,7 +195,6 @@ h1 {
   color: white;
   padding: 24px;
   position: relative;
-  top: 160px;
 }
 .footer__menu img {
   width: 120px;
@@ -426,8 +425,6 @@ h1 {
 
 .img__menu {
   width: 100%;
-  position: absolute;
-  height: 220px;
 }
 
 .menu {
@@ -435,7 +432,7 @@ h1 {
   border-radius: 50px 50px 0 0;
   padding: 20px;
   position: relative;
-  top: 160px;
+  margin-top: -4rem;
 }
 .menu .menu__h1 {
   display: flex;
