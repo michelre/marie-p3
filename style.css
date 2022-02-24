@@ -285,6 +285,11 @@ h1 {
   padding: 20px;
   margin-bottom: 32px;
 }
+@media only screen and (min-width: 768px) {
+  .operation h2 {
+    text-align: center;
+  }
+}
 .operation .operation__form {
   display: flex;
   align-items: baseline;
@@ -295,6 +300,13 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .operation ul {
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+  }
 }
 .operation p {
   background-color: #9356DC;
@@ -326,10 +338,25 @@ h1 {
   padding: 20px 20px 56px 20px;
   background-color: #F6F6F6;
 }
+@media only screen and (min-width: 768px) {
+  .restaurants h2 {
+    text-align: center;
+  }
+}
 .restaurants .restaurants__flex {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+@media only screen and (min-width: 992px) {
+  .restaurants .restaurants__flex {
+    flex-direction: row;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .restaurants a {
+    width: 50%;
+  }
 }
 .restaurants article {
   background-color: white;
@@ -400,6 +427,7 @@ h1 {
 .img__menu {
   width: 100%;
   position: absolute;
+  height: 220px;
 }
 
 .menu {

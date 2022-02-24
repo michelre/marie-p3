@@ -75,6 +75,11 @@
     flex-direction: column;
     padding: 20px;
     margin-bottom: 32px;
+    @media only screen and (min-width: 768px) {
+        h2 {
+            text-align: center;
+        }
+    }
     & .operation__form {
         display:flex;
         align-items: baseline;
@@ -85,6 +90,11 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
+            @media only screen and (min-width: 768px) {
+                flex-direction: row;
+                justify-content: center;
+                gap: 40px;
+            }
         }
         & p {
             background-color: $primary-color;
@@ -115,17 +125,30 @@
     display: flex;
     flex-direction: column;
     padding: 20px 20px 56px 20px;
-    background-color: $main-bgcolor;    
+    background-color: $main-bgcolor; 
+    @media only screen and (min-width: 768px) {
+        h2 {
+            text-align: center;
+        }
+    }
     & .restaurants__flex {
         display: flex;
         flex-direction: column;
         gap: 20px;
+        @media only screen and (min-width: 992px) {
+            flex-direction: row;
+        }
+    }
+    & a {
+        @media only screen and (min-width: 992px) {
+            width: 50%;
+        }
     }
     & article {
         background-color: $footer-txtcolor;
         border-radius: 14px;
         @include box-shadow;
-        width: 100%;
+        width:100%;
         margin: 0;
         padding: 0;
         position: relative;
