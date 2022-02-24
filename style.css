@@ -11,6 +11,7 @@
     transform: translate(-50%, -50%) rotate(360deg);
     opacity: 0;
     display: none;
+    visibility: hidden;
   }
 }
 @keyframes hide {
@@ -57,7 +58,7 @@
 @keyframes slidein {
   0% {
     opacity: 0;
-    transform: translateY(-250px);
+    transform: translateY(-50%);
   }
   100% {
     opacity: 1;
@@ -385,31 +386,52 @@ h1 {
 
 .heart {
   font-size: 25px;
+  width: 25px;
+  height: 25px;
+  position: relative;
 }
 .heart .empty-heart {
-  z-index: 100;
   position: absolute;
-  top: 25px;
-  right: 24px;
+  top: 0;
+  left: 0;
   background-color: white;
-  transition: animation 3s linear 1s;
+  /*&:hover {
+    //animation: heart 3s cubic-bezier(0.88, -0.03, 1, 0.53) 1 both;
+    background: linear-gradient(to left top, $primary-color, $secondary-color);
+    mix-blend-mode: lighten;
+    color: transparent;
+  }*/
 }
-.heart .empty-heart:hover {
-  animation: heart 3s cubic-bezier(0.88, -0.03, 1, 0.53) 1 both;
-  background: linear-gradient(to left top, #9356DC, #FF79DA);
-  mix-blend-mode: lighten;
+.heart .empty-heart::before {
+  transition: all 0.5s linear;
   color: transparent;
+  background: white;
+  background-size: cover;
+  -webkit-background-clip: text;
+}
+.heart .empty-heart:hover::before {
+  background-color: blue;
+  -webkit-background-clip: text;
 }
 .heart .full-heart {
   color: #9356DC;
+  background-clip: text;
   position: absolute;
-  top: 25px;
-  right: 24px;
+  left: 0;
+  top: 100%;
+  transition: top 0.25s linear;
+}
+.heart:hover .full-heart {
+  top: 0;
 }
 
 .img__menu {
   width: 100%;
   max-height: 32rem;
+}
+
+.selection__item {
+  transition: width 500ms linear;
 }
 
 .menu {
@@ -437,16 +459,17 @@ h1 {
   border-bottom: solid 4px #99E2D0;
   padding-bottom: 6px;
 }
-.menu .menu__form .delay__1 {
+.menu .menu__form .delay__1 li {
   animation: slidein 1s ease 0s 1 normal forwards;
 }
-.menu .menu__form .delay__2 {
+.menu .menu__form .delay__2 li {
   animation: slidein 1s ease 0.2s 1 normal forwards;
 }
-.menu .menu__form .delay__3 {
+.menu .menu__form .delay__3 li {
   animation: slidein 1s ease 0.4s 1 normal forwards;
 }
 .menu .menu__form li {
+  overflow: hidden;
   background-color: white;
   border-radius: 20px;
   box-shadow: 1px 3px 2px 1px #e6e4e4;
@@ -456,7 +479,7 @@ h1 {
   transition: all 0.4s ease;
 }
 .menu .menu__form li:hover .selection__item {
-  animation: appear 0.8s 1 both;
+  width: 25%;
 }
 .menu .menu__form li:hover i {
   animation: rotate 0.8s 1;
@@ -493,8 +516,7 @@ h1 {
   justify-content: center;
   align-items: center;
   border-radius: 0 20px 20px 0;
-  width: 0%;
-  transform: scale(0);
+  width: 0;
 }
 .menu .menu__form li .selection__item i {
   color: white;
